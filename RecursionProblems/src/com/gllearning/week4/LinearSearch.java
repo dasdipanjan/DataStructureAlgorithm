@@ -6,7 +6,7 @@ package com.gllearning.week4;
  * Average Case: O(n/2) // Average of total time taken for all element search
  * Worst Case: O(n) // Item is in last location of array or item is not found. 
  * 
- * @author Dipanjan
+ * @author Dipanjan Das
  *
  */
 public class LinearSearch {
