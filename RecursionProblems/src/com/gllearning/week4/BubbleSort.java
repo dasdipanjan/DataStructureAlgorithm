@@ -22,6 +22,7 @@ public class BubbleSort {
 					isSwaped = true;
 				}
 			}
+			System.out.println("Value of I := "+i);
 			if (!isSwaped) {
 				System.out.println("Array elements are already sorted.");
 				break;
@@ -33,7 +34,7 @@ public class BubbleSort {
 		//Unsorted
 		//int array[] = {10, 7, 18, 87, 6, 77, 12, 77};
 		//Sorted
-		int array[] = {6, 7, 10, 12, 18, 77, 77, 87 };
+		int array[] = {11, 17, 25, 20};
 		bubbleSort(array);
 		for (int i = 0; i < array.length; i++) {
 			System.out.print(array[i] + " ");
