@@ -150,7 +150,7 @@ public class CurrencyDenominations {
 		mStringBuffer.append(pair);
 		mStringBuffer.append("\n");
 	}
-	
+
 	/**
 	 * This method is responsible to add element in a particular index in notes array.
 	 * 

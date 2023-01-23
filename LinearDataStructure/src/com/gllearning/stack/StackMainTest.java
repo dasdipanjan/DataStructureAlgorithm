@@ -1,4 +1,4 @@
-package com.gllearning.week6;
+package com.gllearning.stack;
 
 public class StackMainTest {
 
