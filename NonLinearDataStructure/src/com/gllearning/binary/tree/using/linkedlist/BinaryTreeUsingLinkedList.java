@@ -144,5 +144,64 @@ public class BinaryTreeUsingLinkedList {
 		}
 		System.out.println();
 	}
+	
+	public void levelOrderTraversal() {
+		if (rootNode == null) {
+			return;
+		}
+		Queue<Node> queue = new LinkedList<Node>();
+		queue.add(rootNode);
+		while (!queue.isEmpty()) {
+			Node node = queue.poll();
+			System.out.print(node.getValue() + " ");
+			if (node.getLeft() != null) {
+				queue.add(node.getLeft());
+			}
+			if (node.getRight() != null) {
+				queue.add(node.getRight());
+			}
+		}
+		System.out.println();
+	}
+	
+	/**
+	 * This is in order traversal of a tree.
+	 * 
+	 * @param root Object of node.
+	 */
+	public void inOrder(Node root) {
+		if (root == null)
+			return;
+		else {
+			inOrder(root.getLeft());
+			System.out.print(root.getValue() + " ");
+			inOrder(root.getRight());
+		}
+	}
+	
+	public void preOrderTraversal(Node root) {
+		if (root == null) {
+			return;
+		} else {
+			System.out.print(root.getValue() + " ");
+			this.preOrderTraversal(root.getLeft());
+			this.preOrderTraversal(root.getRight());
+		}
+	}
+	
+	public void postOrderTraversal(Node root) {
+		if (root == null) {
+			return;
+		} else {
+			this.postOrderTraversal(root.getLeft());
+			this.postOrderTraversal(root.getRight());
+			System.out.print(root.getValue() + " ");
+		}
+	}
+	
+	
 
+	public Node getRootNode() {
+		return rootNode;
+	}
 }
